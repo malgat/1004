@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>single page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="page1" data-title="첫 번째 페이지">
+		<div data-role="header">
+			<h1>첫 번째 페이지</h1>
+		</div>
+		<div data-role="content">
+			<a href="#page2"> 두 번째 페이지</a>
+		</div>
+		<div data-role="footer">
+			<h4>내부링크방식</h4>
+		</div>
+	</div>
+	<div data-role="page" id="page2">
+		<div data-role="header">
+			<h1>두 번째 페이지</h1>
+		</div>
+		<div data-role="content">
+			<p>페이지 전환 애니메이션 효과</p><br>
+			<a href="#page1" data-direction="reverse">페이지1</a><br>
+			<a href="#page3">페이지3 기본 전환효과 적용</a><br>
+			<a href="#page3" data-transition="slide">페이지3 slide 적용</a><br>
+			<a href="#page3" data-transition="slideup">페이지3 slideup 적용</a><br>
+			<a href="#page3" data-transition="slidedown">페이지3 slidedown 적용</a><br>
+			<a href="#page3" data-transition="flip">페이지3 flip 적용</a><br>
+			<a href="#page3" data-transition="fade">페이지3 fade 적용</a><br>
+			<a href="#page3" data-transition="pop">페이지3 pop 적용</a><br>
+			<a href="#page3" data-transition="fade">페이지3 fade 적용</a><br>
+			<a href="#page3" data-transition="none">페이지3 none 적용</a>
+		</div>
+		<div data-role="footer">
+			<h4>내부링크방식</h4>
+		</div>
+	</div>
+	<div data-role="page" id="page3" data-title="세 번째 페이지">
+		<div data-role="header">
+			<h1></h1>
+		</div>
+		<div data-role="content">
+			<a href="#page1">첫 번째 페이지</a>
+			<a href="#somepage" data-rel="back">두 번째 페이지</a>
+		</div>
+		<div data-role="footer">
+			<h4>꼬리말(footer)영역</h4>
+		</div>
+	</div>
+</body>
+</html>
